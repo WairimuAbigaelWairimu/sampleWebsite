@@ -1,0 +1,186 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: #013220;
+    color: white;
+}
+nav {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .logo {
+    float: left;
+    margin-right: 10px;
+  }
+  nav .logo img {
+    height: 100px;
+    border-radius: 50%;
+    
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 1em;
+    z-index: 999;
+  }
+  nav li {
+    margin-right: 10px;
+    display: inline-block;
+  }
+  nav a {
+    color: white;
+    margin: 1em;
+    text-decoration: none;
+    display: none;  
+  }
+  nav a:hover {
+    color: maroon;
+  }
+.hero .hero-content{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1em;
+}
+.hero .hero-content .text{
+    text-transform: uppercase;
+    
+}
+.hero .hero-content .text h1{
+    font-size: 3rem;
+}
+.hero .hero-content .text h2{
+    color: brown;
+}
+.profile-pic img{
+    width: 100%;
+    box-shadow: 0 0 30px #000;
+}
+.about-me{
+    width: 100%;
+    text-align: center;
+}
+.about-me h3{
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: brown;
+}
+.about-me h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.about-me p{
+    line-height: 30px;
+}
+.promises{
+    margin-top: 10em;
+    background-color: #013220;
+    color: white;
+}
+.promises .promises-text{
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 3em;
+}
+.promises .promises-text h3{
+    text-decoration: underline;
+    font-size: 1.5rem;
+    color: maroon;
+}
+.promises .promises-text h1{
+    font-size: 2rem;
+}
+.promises .what-i-will-fight-for{
+    width: 100%;
+    margin-top: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-transform: capitalize;
+    flex-wrap: wrap;
+}
+.card{
+    background: grey;
+    text-align: center;
+    margin: 0 2em 0 2em;
+    padding: 1em;
+}
+.card h3{
+    text-transform: capitalize;
+}
+.fa-child-reaching{
+    font-size: 3rem;
+    padding: 1em;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info h1{
+    text-transform: uppercase;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header{
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: transparent;   
+}
+.progress-indicator{
+    width: 100%;
+    height: 20px;
+    background: black;
+    position: relative;
+}
+.progress-bar{
+    height: 50px;
+    background-color: grey;
+    width: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1180px) {
+    .what-i-will-fight-for{
+        flex-wrap: nowrap;
+    }
+    .profile-pic{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .about-me{
+        width: 50%;
+    }
+    nav a{
+        display: flex;
+    }
+  }
